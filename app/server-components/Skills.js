@@ -1,16 +1,14 @@
 import SkillSection from "@/components/SkillSection";
+import { getSkillsData } from "@/lib/json-data";
 import React, { Fragment } from "react";
 
-const getSkillsDatafromAPI = async () => {
-  const response = await fetch('/api/skills');
-  return await response.json();
-};
+// const getSkillsDatafromAPI = async () => {
+//   const response = await fetch(process.env.SKILLS_API_KEY);
+//   return await response.json();
+// };
 
 const Skills = async () => {
-  if(!process.env.SKILLS_API_KEY){
-    return null;
-  }
-  const list = await getSkillsDatafromAPI();
+  const list = await getSkillsData();
   return (
     <Fragment>
       <SkillSection skillslist={list} />

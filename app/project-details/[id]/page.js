@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import RenderProjectDetails from "@/components/ProjectDetail";
 import { notFound } from "next/navigation";
+import { getProjectsData } from "@/lib/json-data";
 
 export async function generateStaticParams() {
-  const res = await fetch('/api/projects');
-  const projects = await res.json();
+  const projects = await getProjectsData();
 
   return projects.map((project) => ({
     id: project.id,
@@ -12,13 +12,7 @@ export async function generateStaticParams() {
 }
 
 async function getProject(id) {
-  const res = await fetch('/api/projects', {
-    next: {
-      revalidate: 160,
-    },
-  });
-
-  const data = await res.json();
+  const data = await getProjectsData();
   const projectdetail = data.find((pd) => pd.id === id);
   if (projectdetail === undefined) {
     notFound();
