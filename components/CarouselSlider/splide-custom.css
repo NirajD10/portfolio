@@ -1,0 +1,24 @@
+.splide__arrow--prev {
+    background-color: #7149C6;
+    color: #fff; /* Change arrow color */
+  }
+  
+  /* Customize the next (right) arrow */
+  .splide__arrow--next {
+    background-color: #7149C6;
+    color: #fff; /* Change arrow color */
+  }
+  
+  .splide__arrow:hover {
+    background-color: #8b64df;
+  }
+
+.splide__pagination__page{
+    background-color: #8b64df;
+    width: 0.8em;
+    height: 0.8em;
+}
+
+.splide__pagination__page.is-active {
+    background-color: #7149C6;
+}

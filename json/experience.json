@@ -1,0 +1,23 @@
+[
+  {
+    "companyname": "Innovhub Systems Pvt.Ltd.",
+    "workrole": "Former Director",
+    "dates": "September 2021 - April 2023",
+    "companyimageurl": "/Companylogo/insys.png",
+    "accomplish": [
+      "Successfully led research and development as well as operation and assembly processes efforts, resulting in the development of innovative prototypes for 3D Printer Machine.",
+      "Developed and maintained (Wordpress and ReactJS) for A3DXYZ and Spare3D Website.",
+      "Managed ecommerce operations for 3D printer spare parts, resulting in increased sales and customer satisfaction. Developed and implemented effective inventory management strategies, resulting in improved stock control and reduced costs."
+    ]
+  },
+  {
+    "companyname": "Spellsys Technologies",
+    "workrole": "Full Stack Developer",
+    "dates": "February 2022 - February 2023",
+    "companyimageurl": "/Companylogo/spellsys.png",
+    "accomplish": [
+      "Developed Website by using JS, ReactJS, Nodejs/Express JS, and MySQL/PostgresSQL, PHP.",
+      "I increased website traffic by 30% through search engine optimization efforts and developed attractive website using Wordpress."
+    ]
+  }
+]

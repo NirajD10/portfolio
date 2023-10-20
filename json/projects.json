@@ -1,0 +1,128 @@
+[
+    {
+        "id": "p1",
+        "projectname": "Niraj's Portfolio",
+        "shortdescription": "Welcome to my portfolio website! It's a showcase of my work and skills as a Full Stack Developer.",
+        "thumbnailsurl": "/Projects/portfolio/screenshot.png",
+        "technologies": [
+            {
+                "name": "Next.js",
+                "icon": "/Skillslogo/next.png"
+            },
+            {
+                "name": "React",
+                "icon": "/Skillslogo/react.png"
+            },
+            {
+                "name": "Framer Motion",
+                "icon": "/Skillslogo/fmotion.png"
+            },
+            {
+                "name": "Tailwindcss",
+                "icon": "/Skillslogo/tailwindcss.png"
+            },
+            {
+                "name": "CSS",
+                "icon": "/Skillslogo/css.png"
+            }
+        ],
+        "githuburl": "https://github.com/NirajD10",
+        "livesiteurl": "https://github.com/NirajD10",
+        "imagecarousel": [
+            {
+                "alt": "Demo Portfolio Image",
+                "link": "/Projects/portfolio/banner.png"
+            }
+        ],
+        "Overview": "Welcome to my portfolio! It's a clean, modern platform highlighting my skills, especially in front-end development. The site is designed for a smooth and enjoyable user experience. Employers and clients can quickly learn about my capabilities. Each section emphasizes my strengths, all presented in an appealing layout that aims to leave a strong impression.",
+        "keyFeatures": [
+            "Fast and clean modern website",
+            "Best and smooth Ui design experience",
+            "Cross site responsive website"
+        ],
+        "design": "Design is completely draws by me. I did researched myself on other portfolio and came up design ideas by joining puzzle from others. It tooks 3-4 days to complete design. from prototype I started design on figma which is easier for me to develop website.",
+        "designimageurl": "/Projects/portfolio/Design_Prototype.png",
+        "development": "I decided to use technolgies using next.js, react, framer motion and css. . Each technology was chosen carefully to ensure the application is highly efficient, user-friendly, and visually appealing. \n\n Next.js was chosen as the primary framework for this project because of its impressive speed, image optimization, and mainly built-in to make rest api.for details I filled information on sperate json file which is can be easier to change data without touching code.Mainly I used to open json file and made rest api convert to json stringify."
+    },
+    {
+        "id": "p2",
+        "projectname": "Fitness Landing Page",
+        "shortdescription": "The Fitness Landing Page is a web application designed to fitness business website..",
+        "thumbnailsurl": "/Projects/fitness-landing/screenshot.png",
+        "technologies": [
+            {
+                "name": "React",
+                "icon": "/Skillslogo/react.png"
+            },
+            {
+                "name": "Framer Motion",
+                "icon": "/Skillslogo/fmotion.png"
+            },
+            {
+                "name": "CSS",
+                "icon": "/Skillslogo/css.png"
+            }
+        ],
+        "githuburl": "https://github.com/NirajD10/Fitness-Landing-Page",
+        "livesiteurl": "https://fitness-lp.netlify.app/",
+        "Overview": "The Fitness Landing Page is a web application designed to fitness business website. I decided to create it using React.js and Pure CSS. The landing page provides a visually appealing and user-friendly, animations interface to display Fitness services, package attracting potential visitors. The landing page is built using modern web technologies and is fully responsive for an optimal viewing experience across devices.",
+        "keyFeatures": [
+            "Fitness landing page with stunning visuals.",
+            "Responsive design for seamless viewing on various devices.",
+            "Artistic animations and interactive elements for an engaging user experience.",
+            "Smooth navigation between sections with the Navbar and scolling."
+        ],
+        "imagecarousel": [
+            {
+                "alt": "Demo Fitness Image",
+                "link": "/Projects/fitness-landing/banner.png"
+            }
+        ],
+        "design": "I didn't own design. I found an amazing designer from dribble(<a style='text-decoration: underline; color: #7149C6;' href='https://dribbble.com/shots/20765972-Fitness-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=filllo&utm_content=Fitness%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=filllo&utm_content=Fitness%20Landing%20Page&utm_medium=Social_Share' target='_blank'>Fillo Design Agency<a/>) and decided to use pratice in code.",
+        "development": "I decided to use technolgies using  react, framer motion and css. for smooth scroller i used third party package called \"Smooth Scroller\". Each technology was chosen carefully to ensure the application is highly efficient, user-friendly, and visually appealing. \n\n React.js was chosen as the primary framework for this project because of its easy to organize compoents as well as css appearing."
+    },
+    {
+        "id": "p3",
+        "projectname": "WeathTemp",
+        "shortdescription": "WeathTemp is weather temperature website searched based by city or location.",
+        "thumbnailsurl": "/Projects/weathtemp/screenshot.png",
+        "technologies": [
+            {
+                "name": "HTML",
+                "icon": "/Skillslogo/html.png"
+            },
+            {
+                "name": "CSS",
+                "icon": "/Skillslogo/css.png"
+            },
+            {
+                "name": "Javascript",
+                "icon": "/Skillslogo/javascript.png"
+            },
+            {
+                "name": "Tailwindcss",
+                "icon": "/Skillslogo/tailwindcss.png"
+            }
+        ],
+        "githuburl": "https://github.com/NirajD10/WeathTemp",
+        "livesiteurl": "https://nirajd10.github.io/WeathTemp/",
+        "Overview": "Weathtemp is the basic application where to put pratice as using technologies html,css, javascript. I used third party api services of weather. Not only api but also search query filter biased city or any location that you may get list wise.",
+        "keyFeatures": [
+            "Search city or location in all worlds.",
+            "Fast API load",
+            "Beautiful UI WeatherTemp.",
+            "Cross platform",
+            "Referesh load ready.",
+            "Get your location instantly.",
+            "All details of temperature highlights"
+        ],
+        "imagecarousel": [
+            {
+                "alt": "WeathTemp Image",
+                "link": "/Projects/weathtemp/screenshot.png"
+            }
+        ],
+        "design": "I didn't own design. I found a designer from dribble(<a style='text-decoration: underline; color: #7149C6;' href='https://dribbble.com/shots/20449736-Weather-App' target='_blank'>Awsmd<a/>) and decided to use pratice in code.",
+        "development": "I decided to use technolgies using  html, javascript and css. for api i used third party api called \"Open Meteo\". The structure code are used based classes structure. I may have little bug issues when I select a country or location on list(due to action event click)."
+    }
+]

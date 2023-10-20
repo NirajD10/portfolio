@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Frontend",
+        "skills": [
+            {
+                "id": 1,
+                "name": "HTML",
+                "iconUrl": "/Skillslogo/html.png"
+            },
+            {
+                "id": 2,
+                "name": "CSS",
+                "iconUrl": "/Skillslogo/css.png"
+            },
+            {
+                "id": 3,
+                "name": "Javscript",
+                "iconUrl": "/Skillslogo/javascript.png"
+            },
+            {
+                "id": 4,
+                "name": "React Js",
+                "iconUrl": "/Skillslogo/react.png"
+            },
+            {
+                "id": 5,
+                "name": "TailwindCSS",
+                "iconUrl": "/Skillslogo/tailwindcss.png"
+            }
+        ]
+    },
+    {
+        "name": "Framework and Libraries",
+        "skills": [
+            {
+                "id": "f1",
+                "name": "Next Js",
+                "iconUrl": "/Skillslogo/next.png"
+            },
+            {
+                "id": "f2",
+                "name": "Framer M.",
+                "iconUrl": "/Skillslogo/fmotion.png"
+            },
+            {
+                "id": "f3",
+                "name": "EJS engine",
+                "iconUrl": "/Skillslogo/ejs.png"
+            }
+        ]
+    },
+    {
+        "name": "Backend",
+        "skills": [
+            {
+                "id": "b1",
+                "name": "Node Js",
+                "iconUrl": "/Skillslogo/node.png"
+            },
+            {
+                "id": "b2",
+                "name": "Express Js",
+                "iconUrl": "/Skillslogo/express.png"
+            },
+            {
+                "id": "b3",
+                "name": "Firebase",
+                "iconUrl": "/Skillslogo/firebase.png"
+            }
+        ]
+    },
+    {
+        "name": "Database Management",
+        "skills": [
+            {
+                "id": "d1",
+                "name": "MongoDB",
+                "iconUrl": "/Skillslogo/mongodb.png"
+            },
+            {
+                "id": "d2",
+                "name": "Mongoose",
+                "iconUrl": "/Skillslogo/mongoose.png"
+            },
+            {
+                "id": "d3",
+                "name": "MySQL",
+                "iconUrl": "/Skillslogo/mysql.png"
+            },
+            {
+                "id": "d4",
+                "name": "Sequelize",
+                "iconUrl": "/Skillslogo/sequelize.png"
+            }
+        ]
+    },
+    {
+        "name": "Version Control",
+        "skills": [
+            {
+                "id": "v1",
+                "name": "Git",
+                "iconUrl": "/Skillslogo/git.png"
+            }
+        ]
+    },
+    {
+        "name": "Ui/UX Tools",
+        "skills": [
+            {
+                "id": "u1",
+                "name": "Figma",
+                "iconUrl": "/Skillslogo/Figma.png"
+            },
+            {
+                "id": "u2",
+                "name": "Photoshop",
+                "iconUrl": "/Skillslogo/photoshop.png"
+            }
+        ]
+    }
+]
