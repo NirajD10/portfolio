@@ -3,7 +3,7 @@ import RenderProjectDetails from "@/components/ProjectDetail";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
-  const res = await fetch("http://localhost:8080/api/projects");
+  const res = await fetch(process.env.PROJECTS_API_KEY);
   const projects = await res.json();
 
   return projects.map((project) => ({
