@@ -9,7 +9,7 @@ export async function GET(req) {
       encoding: "utf-8",
       flag: "r",
     });
-    return NextResponse.json(JSON.parse(posts));
+    return NextResponse.status(200).json(JSON.parse(posts));
   } else {
     NextResponse.status(405).json({ message: "Method not allowed" });
   }

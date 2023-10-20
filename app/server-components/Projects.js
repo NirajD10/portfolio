@@ -2,7 +2,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import React, { Fragment } from "react";
 
 const getProjectsDatafromAPI = async () => {
-  const response = await fetch(process.env.PROJECTS_API_KEY, {
+  const response = await fetch('/api/projects', {
     next: {
       revalidate: 60,
     },
