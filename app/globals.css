@@ -1,27 +1,48 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scrollbar-width: 0.8vw;
+  scrollbar-color: #7149c6a1 #2e2e2e;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7149c6a1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2e2e2e;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer components{
+
+  .blob {
+    width: 25.25rem;
+    height: 25.25rem;
+    border-radius: 25.25rem;
+    opacity: 0.9;
+    background: var(--Dark-BG-Secondary, #7149c6);
+    filter: blur(275px);
+    position: absolute;
+    right: 0;
+    z-index: -10;
+    transform: translateX(20%);
+    transform: translateY(40%);
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/*TODO: change blob css to tailwindcss */
