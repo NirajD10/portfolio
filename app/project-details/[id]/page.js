@@ -3,10 +3,7 @@ import RenderProjectDetails from "@/components/ProjectDetail";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
-  if (process.env.PROJECTS_API_KEY === undefined) {
-    return null;
-  }
-  const res = await fetch(process.env.PROJECTS_API_KEY);
+  const res = await fetch("http://localhost:8080/api/projects");
   const projects = await res.json();
 
   return projects.map((project) => ({
@@ -30,9 +27,6 @@ async function getProject(id) {
 }
 
 export default async function ProjectDetails({ params }) {
-  if (process.env.PROJECTS_API_KEY === undefined) {
-    return null;
-  }
   const project = await getProject(params.id);
 
   return (
