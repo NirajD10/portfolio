@@ -2,14 +2,14 @@ import React, { Fragment } from "react";
 import RenderProjectDetails from "@/components/ProjectDetail";
 import { notFound } from "next/navigation";
 
-export async function generateStaticParams() {
-  const res = await fetch(process.env.PROJECTS_API_KEY);
-  const projects = await res.json();
+// export async function generateStaticParams() {
+//   const res = await fetch(process.env.PROJECTS_API_KEY);
+//   const projects = await res.json();
 
-  return projects.map((project) => ({
-    id: project.id,
-  }));
-}
+//   return projects.map((project) => ({
+//     id: project.id,
+//   }));
+// }
 
 async function getProject(id) {
   const res = await fetch(process.env.PROJECTS_API_KEY, {
