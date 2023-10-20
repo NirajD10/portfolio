@@ -3,6 +3,9 @@ import RenderProjectDetails from "@/components/ProjectDetail";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
+  if (!process.env.PROJECTS_API_KEY) {
+    return null;
+  }
   const res = await fetch(process.env.PROJECTS_API_KEY);
   const projects = await res.json();
 
