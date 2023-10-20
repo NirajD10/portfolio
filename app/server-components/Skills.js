@@ -7,6 +7,9 @@ const getSkillsDatafromAPI = async () => {
 };
 
 const Skills = async () => {
+  if(!process.env.SKILLS_API_KEY){
+    return null;
+  }
   const list = await getSkillsDatafromAPI();
   return (
     <Fragment>

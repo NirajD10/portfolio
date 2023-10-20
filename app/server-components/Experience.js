@@ -8,6 +8,9 @@ const getExperienceDatafromAPI = async () => {
 };
 
 const Experience = async () => {
+  if(!process.env.EXPERIENCE_API_KEY){
+    return null;
+  }
   const tabsanddetails = await getExperienceDatafromAPI();
   return (
     <Fragment>

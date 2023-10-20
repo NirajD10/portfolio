@@ -12,6 +12,9 @@ const getProjectsDatafromAPI = async () => {
 };
 
 const Projects = async () => {
+  if(!process.env.PROJECTS_API_KEY){
+    return null;
+  }
   const projectsdetails = await getProjectsDatafromAPI();
   return (
     <Fragment>
