@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import ConnectSection from "@/components/ConnectSection";
 import MouseCursor from "@/components/MouseCursor";
 import BackgroundSound from "@/components/BackgroundSound";
+import Head from "next/head";
 
 const dm_sans = DM_Sans({
   subsets: ["latin"],
@@ -31,6 +32,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${dm_sans.className} ${roboto.className} !scroll-smooth`}
     >
+      <Head>
+        <meta property="og:image" content="/OG_image.png" />
+      </Head>
       <body className="h-[100dvh] bg-dark-alternative selection:bg-dark-secondary selection:text-primary">
         <BackgroundSound />
         <ActiveSectionContextProvider>
