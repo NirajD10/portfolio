@@ -27,7 +27,7 @@
             }
         ],
         "githuburl": "https://github.com/NirajD10",
-        "livesiteurl": "https://github.com/NirajD10",
+        "livesiteurl": "https://nirajdeshmukh.com",
         "imagecarousel": [
             {
                 "alt": "Demo Portfolio Image",
@@ -42,7 +42,7 @@
         ],
         "design": "Design is completely draws by me. I did researched myself on other portfolio and came up design ideas by joining puzzle from others. It tooks 3-4 days to complete design. from prototype I started design on figma which is easier for me to develop website.",
         "designimageurl": "/Projects/portfolio/Design_Prototype.png",
-        "development": "I decided to use technolgies using next.js, react, framer motion and css. . Each technology was chosen carefully to ensure the application is highly efficient, user-friendly, and visually appealing. \n\n Next.js was chosen as the primary framework for this project because of its impressive speed, image optimization, and mainly built-in to make rest api.for details I filled information on sperate json file which is can be easier to change data without touching code.Mainly I used to open json file and made rest api convert to json stringify."
+        "development": "I decided to use technolgies using next.js, react, framer motion and css. . Each technology was chosen carefully to ensure the application is highly efficient, user-friendly, and visually appealing. \n\n Next.js was chosen as the primary framework for this project because of its impressive speed, image optimization, and mainly built-in to make rest api.for details I filled information on sperate json file which is can be easier to change data without touching code.Mainly I used to open json file and store in local data."
     },
     {
         "id": "p2",
