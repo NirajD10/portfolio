@@ -51,7 +51,7 @@ const ExperienceSection = ({ tabsanddetails }) => {
                 >
                   {tad === selectedTab && (
                     <motion.span
-                      className="absolute bg-dark-secondary inset-0 rounded-[14px] sm:rounded-[20px] -z-10"
+                      className="absolute bg-dark-secondary inset-0 rounded-[14px] sm:rounded-[18px] -z-10"
                       layoutId="selectedTab"
                       transition={{
                         type: "spring",

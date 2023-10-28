@@ -37,7 +37,7 @@ const Header = () => {
             animate={{ y: 0, x: "-50%", opacity: 1 }}
           ></motion.div>
           <nav className="hidden sm:block fixed top-[0.5rem] left-1/2 h-8 -translate-x-1/2 py-2">
-            <ul className="flex w-[24rem] flex-wrap items-center justify-center gap-y-1 gap-4 text-[1rem] font-roboto text-primary">
+            <ul className="flex w-[25rem] flex-wrap items-center justify-center gap-y-[0.5px] gap-[18px] text-[1rem] font-roboto text-primary">
               {links.map((link) => (
                 <motion.li
                   className="h-3/4 flex items-center justify-center relative"

@@ -41,7 +41,7 @@ const SkillSection = ({ skillslist }) => {
               />
               <div
                 id={skill.name}
-                className="flex flex-row gap-3 max-w-full whitespace-nowrap sm:w-auto sm:flex-wrap carousel overflow-hidden scroll-smooth"
+                className="flex flex-row gap-3 max-w-full whitespace-nowrap sm:w-auto sm:flex-wrap carousel overflow-auto touch-auto scroll-smooth"
               >
                 {skill.skills.map((s) => (
                   <motion.div
@@ -61,7 +61,7 @@ const SkillSection = ({ skillslist }) => {
                       width="0"
                       height="0"
                       sizes="100vw"
-                      className="w-[70px] h-[70px] object-contain"
+                      className="w-[75px] h-[75px] object-contain"
                       alt={s.name}
                     />
                     <p className="font-dm_sans font-medium text-base sm:text-[20px] text-primary text-center leading-none">

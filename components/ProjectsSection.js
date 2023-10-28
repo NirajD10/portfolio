@@ -56,7 +56,7 @@ const ProjectsSection = ({ projectsdetails }) => {
                   <p className="font-roboto font-light sm:text-base lg:text-lg text-primary flex-wrap">
                     {project.shortdescription}
                   </p>
-                  <div className="flex flex-wrap gap-2 sm:gap-0">
+                  <div className="flex flex-wrap gap-2 gap-y-2  sm:gap-0">
                     {project.technologies.map((ptech) => (
                       <Badges key={ptech.name}>{ptech.name}</Badges>
                     ))}
