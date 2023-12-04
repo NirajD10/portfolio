@@ -6,6 +6,7 @@ import ConnectSection from "@/components/ConnectSection";
 import MouseCursor from "@/components/MouseCursor";
 import BackgroundSound from "@/components/BackgroundSound";
 import Head from "next/head";
+import { Analytics } from '@vercel/analytics/react';
 
 const dm_sans = DM_Sans({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
           </main>
           <ConnectSection />
         </ActiveSectionContextProvider>
+        <Analytics />
       </body>
     </html>
   );
