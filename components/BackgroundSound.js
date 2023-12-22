@@ -6,12 +6,12 @@ const BackgroundSound = () => {
   const musicRef = useRef(null);
 
   const audioHandler = () => {
-    if (musicRef.current.paused) {
+    if (musicRef.current?.paused) {
       setIsplayMusic(true);
-      musicRef.current.play();
+      musicRef.current?.play();
     } else {
       setIsplayMusic(false);
-      musicRef.current.pause();
+      musicRef.current?.pause();
     }
   };
 

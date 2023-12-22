@@ -1,12 +1,8 @@
-import ActiveSectionContextProvider from "@/context/active-section-context";
 import "./globals.css";
 import { DM_Sans, Roboto } from "next/font/google";
-import Header from "@/components/Header";
-import ConnectSection from "@/components/ConnectSection";
-import MouseCursor from "@/components/MouseCursor";
-import BackgroundSound from "@/components/BackgroundSound";
 import Head from "next/head";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
+import LayoutComponent from "@/components/LayoutComponent";
 
 const dm_sans = DM_Sans({
   subsets: ["latin"],
@@ -35,17 +31,10 @@ export default function RootLayout({ children }) {
     >
       <Head>
         <meta property="og:image" content="/OG_image.png" />
+        <meta name="og:title" content="Niraj Deshmukh - Full Stack Developer" />
       </Head>
       <body className="h-[100dvh] bg-dark-alternative selection:bg-dark-secondary selection:text-primary">
-        <BackgroundSound />
-        <ActiveSectionContextProvider>
-          <MouseCursor />
-          <main className="bg-dark-primary relative z-10 flex flex-col justify-center items-center text-primary overflow-x-hidden rounded-b-[3.5rem] sm:rounded-b-[4.5rem] border-b-4 border-b-neutral-800">
-            <Header />
-            {children}
-          </main>
-          <ConnectSection />
-        </ActiveSectionContextProvider>
+        <LayoutComponent>{children}</LayoutComponent>
         <Analytics />
       </body>
     </html>

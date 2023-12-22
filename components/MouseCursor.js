@@ -1,12 +1,18 @@
 "use client";
 import React, { Fragment, useEffect, useState } from "react";
+import { useMediaQuery } from "@uidotdev/usehooks";
 import AnimatedCursor from "react-animated-cursor";
 
 const MouseCursor = () => {
   const [isMounted, setIsMounted] = useState(false);
+  const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
 
   useEffect(() => {
-    setIsMounted(true);
+    if (isSmallDevice) {
+      setIsMounted(false);
+    } else {
+      setIsMounted(true);
+    }
   }, []);
   return (
     <Fragment>
