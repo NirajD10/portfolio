@@ -1,18 +1,12 @@
 "use client";
 import React, { Fragment, useEffect, useState } from "react";
-import { useMediaQuery } from "@uidotdev/usehooks";
 import AnimatedCursor from "react-animated-cursor";
 
 const MouseCursor = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
 
   useEffect(() => {
-    if (isSmallDevice) {
-      setIsMounted(false);
-    } else {
-      setIsMounted(true);
-    }
+    setIsMounted(true);
   }, []);
   return (
     <Fragment>
@@ -30,6 +24,7 @@ const MouseCursor = () => {
           outerStyle={{
             border: "3px solid #7149C6",
           }}
+          className="hidden sm:block"
         />
       )}
     </Fragment>
