@@ -22,19 +22,15 @@ function LoadingScreen({ finishLoading }) {
           splitter={(str) => splitter.splitGraphemes(str)}
           sequence={[
             "Hello.",
-            1500,
+            1000,
             "नमस्ते",
-            1500,
-            "Ciao.",
-            1500,
-            "你好",
-            1500,
-            "Здравейте",
-            1500,
+            1000,
             "Hola.",
-            1500,
+            1000,
             "Bonjour",
-            1500,
+            1000,
+            "你好",
+            1000,          
             () => finishLoading(),
           ]}
           style={{ fontSize: "2em", color: "#F9FAFC" }}
