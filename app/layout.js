@@ -2,6 +2,7 @@ import "./globals.css";
 import { DM_Sans, Roboto } from "next/font/google";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import LayoutComponent from "@/components/LayoutComponent";
 
 const dm_sans = DM_Sans({
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       <body className="h-[100dvh] bg-dark-alternative selection:bg-dark-secondary selection:text-primary">
         <LayoutComponent>{children}</LayoutComponent>
         <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   );
