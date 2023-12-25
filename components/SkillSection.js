@@ -26,7 +26,7 @@ const SkillSection = ({ skillslist }) => {
         viewport={{ once: true }}
         transition={{ delay: 0.72, type: "keyframes" }}
       >
-        I&apos;m skilled in various common frontend and Backend technologies,
+        I&apos;m skilled in various frontend and backend technologies,
         demonstrating my ability and adaptability.
       </motion.p>
       <div className="flex flex-col gap-4">

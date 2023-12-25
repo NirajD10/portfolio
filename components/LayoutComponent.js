@@ -22,7 +22,7 @@ function LayoutComponent(props) {
   }, []);
   return (
     <AnimatePresence initial={false} mode="wait">
-      {/* {isLoading && isHome ? (
+      {isLoading && isHome ? (
         <motion.div
           key={"loadingscreen"}
           initial={{ opacity: 0 }}
@@ -32,7 +32,7 @@ function LayoutComponent(props) {
         >
           <LoadingScreen finishLoading={() => setIsLoading(false)} />
         </motion.div>
-      ) : ( */}
+      ) : (
         <>
           <BackgroundSound />
           <ActiveSectionContextProvider>
@@ -44,7 +44,7 @@ function LayoutComponent(props) {
             <ConnectSection />
           </ActiveSectionContextProvider>
         </>
-      {/* )} */}
+      )}
     </AnimatePresence>
   );
 }
