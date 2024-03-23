@@ -1,6 +1,65 @@
 [
-    {
+{
         "id": "p1",
+        "projectname": "PurePlantParadise - An Indoor plants ecommerce",
+        "shortdescription": "Welcome to PurePlantParadise – your premier online destination for indoor plants powered by advanced MERN Stack technology for a seamless shopping experience.",
+        "thumbnailsurl": "/Projects/pureplantparadise/banner.png",
+        "technologies": [
+            {
+                "name": "React",
+                "icon": "/Skillslogo/react.png"
+            },
+            {
+                "name": "Express.js",
+                "icon": "/Skillslogo/express.png"
+            },
+            {
+                "name": "Node.js",
+                "icon": "/Skillslogo/node.png"
+            },
+            {
+                "name": "MongoDB",
+                "icon": "/Skillslogo/mongodb.png"
+            },
+            {
+                "name": "Tailwindcss",
+                "icon": "/Skillslogo/tailwindcss.png"
+            },
+            {
+                "name": "Firebase",
+                "icon": "/Skillslogo/firebase.png"
+            },
+
+        ],
+        "githuburl": "https://github.com/NirajD10/pureplantparadise",
+        "livesiteurl": "https://pureplantparadise.netlify.app/",
+        "imagecarousel": [
+            {
+                "alt": "Product Image",
+                "link": "/Projects/pureplantparadise/Pureplantapradise_screenshot.png.png"
+            },
+	    {
+                "alt": "Demo Pureplantparadise Image",
+                "link": "/Projects/pureplantparadise/Pureplantapradise_screenshot_2.jpg"
+            }
+
+        ],
+        "Overview": "PurePlantParadise features an advanced ecommerce platform developed using the MERN(Mongodb, Express.js, React, Node.js) Stack technology. It offers a seamless experience for indoor plant enthusiasts, allowing customers to effortlessly browse, order, and purchase their favorite greenery. The site includes a user-friendly interface and intuitive design, while the admin dashboard empowers administrators to manage products, categories, and attributes with ease. Additionally, administrators can efficiently handle order management tasks, including updating statuses and fulfilling customer requests. With comprehensive CRUD capabilities and efficient order management functionalities.",
+        "keyFeatures": [
+            "Checkout - One-page Checkout process with online payment.",
+	    "Filter with fully operate - Search or filter based product." 
+            "Catalog Management - with customized attribute and multiple category.",
+            "CRUD Operations - Mange order, product, category and attribute."
+	    "Admin Dashboard page"
+        ],
+        "design": "I personally crafted every detail of PurePlantParadise's design, drawing inspiration from various sources and leveraging pre-built components, including some from Shadcn, to personalize the website. Using Figma, I meticulously prototyped and designed the website over the course of 1-1.5 weeks. The design process involved a thorough exploration of layout, color schemes, typography, and imagery to create a visually appealing and user-friendly interface.Every aspect of the design was carefully considered to provide an enjoyable browsing experience for our users. The design of PurePlantParadise reflects my dedication to creating a beautiful and intuitive online shopping environment for indoor plant enthusiasts.",
+        "designimageurl": "/Projects/pureplantparadise/Design_Prototype.png",
+        "development": "For PurePlantParadise, I utilized the MERN stack to develop the site, ensuring efficiency and scalability. Before diving into code, I meticulously crafted schema relationships for MongoDB, prioritizing stability and minimizing the need for future changes.
+	On the frontend, I opted for React with Tailwind CSS for styling, incorporating pre-built components from Shadcn and customizing them to align with my vision. To manage state effectively, I employed Redux for global state management, while leveraging Tanstack Query for asynchronous state management and API refetching. For seamless navigation, React Router Dom handled routing seamlessly.
+	Moving to the backend, I leveraged API endpoints to facilitate data flow. Using Mongoose for MongoDB ORM simplified database operations, while Firebase served as the image storage bucket, with URLs converted to store in MongoDB collections. Deployment was streamlined with Netlify handling frontend deployment and Render.com for backend deployment."
+    },
+    {
+        "id": "p2",
         "projectname": "Niraj's Portfolio",
         "shortdescription": "Welcome to my portfolio website! It's a showcase of my work and skills as a Full Stack Developer.",
         "thumbnailsurl": "/Projects/portfolio/screenshot.png",
@@ -45,7 +104,7 @@
         "development": "I decided to use technolgies using next.js, react, framer motion and css. . Each technology was chosen carefully to ensure the application is highly efficient, user-friendly, and visually appealing. \n\n Next.js was chosen as the primary framework for this project because of its impressive speed, image optimization, and mainly built-in to make rest api.for details I filled information on sperate json file which is can be easier to change data without touching code.Mainly I used to open json file and store in local data."
     },
     {
-        "id": "p2",
+        "id": "p3",
         "projectname": "Fitness Landing Page",
         "shortdescription": "The Fitness Landing Page is a web application designed to fitness business website..",
         "thumbnailsurl": "/Projects/fitness-landing/screenshot.png",
@@ -82,7 +141,7 @@
         "development": "I decided to use technolgies using  react, framer motion and css. for smooth scroller i used third party package called \"Smooth Scroller\". Each technology was chosen carefully to ensure the application is highly efficient, user-friendly, and visually appealing. \n\n React.js was chosen as the primary framework for this project because of its easy to organize compoents as well as css appearing."
     },
     {
-        "id": "p3",
+        "id": "p4",
         "projectname": "WeathTemp",
         "shortdescription": "WeathTemp is weather temperature website searched based by city or location.",
         "thumbnailsurl": "/Projects/weathtemp/screenshot.png",
