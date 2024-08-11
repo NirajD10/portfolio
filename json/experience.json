@@ -1,5 +1,15 @@
 [
   {
+    "companyname": "Osumare Marketing Solutions",
+    "workrole": "Full Stack Developer - Intern",
+    "dates": "July 2024 - Present",
+    "companyimageurl": "/Companylogo/osumare.png",
+    "accomplish": [
+      "Actively working on projects using the MERN stack (MongoDB, Express.js, React, Node.js) with TailwindCSS for styling and UI design.",
+      "Collaborating with the team through GitHub for version control, code reviews, and seamless project management."
+    ]
+  },
+  {
     "companyname": "Innovhub Systems Pvt.Ltd.",
     "workrole": "Former Director",
     "dates": "September 2021 - Oct 2023",
