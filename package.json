@@ -16,7 +16,7 @@
     "framer-motion": "^10.16.4",
     "grapheme-splitter": "^1.0.4",
     "ldrs": "^1.0.1",
-    "next": "^13.0.5-canary.23",
+    "next": "^14.2.10",
     "react": "latest",
     "react-animated-cursor": "^2.10.1",
     "react-dom": "latest",
