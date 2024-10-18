@@ -105,6 +105,46 @@
         ]
     },
     {
+        "name": "Deployment",
+        "skills": [
+            {
+                "id": "dp1",
+                "name": "AWS EC2",
+                "iconUrl": "/Skillslogo/AWS_EC2.png"
+            },
+            {
+                "id": "dp2",
+                "name": "Jenkins",
+                "iconUrl": "/Skillslogo/jenkins.png"
+            },
+            {
+                "id": "dp3",
+                "name": "Docker",
+                "iconUrl": "/Skillslogo/Docker.png"
+            },
+            {
+                "id": "dp4",
+                "name": "AWS S3",
+                "iconUrl": "/Skillslogo/S3.png"
+            },
+            {
+                "id": "dp5",
+                "name": "AWS SNS",
+                "iconUrl": "/Skillslogo/AWS_SNS.png"
+            }
+        ]
+    },
+    {
+        "name": "Mobile App Development",
+        "skills": [
+            {
+                "id": "md1",
+                "name": "React Native",
+                "iconUrl": "/Skillslogo/rnative.png"
+            }
+        ]
+    },
+    {
         "name": "Ui/UX Tools",
         "skills": [
             {
