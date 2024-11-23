@@ -1,8 +1,17 @@
 [
   {
+    "companyname": "Pure Tech Codex Pvt.Ltd.",
+    "workrole": "Junior Software Developer",
+    "dates": "Nov 2024 - Present",
+    "companyimageurl": "/Companylogo/pure_technology_logo.jpg",
+    "accomplish": [
+      "Actively working on projects using the React with TailwindCSS for styling and UI design."
+    ]
+  },
+  {
     "companyname": "Osumare Marketing Solutions",
     "workrole": "Full Stack Developer - Intern",
-    "dates": "July 2024 - Present",
+    "dates": "July 2024 - Nov 2024",
     "companyimageurl": "/Companylogo/osumare.png",
     "accomplish": [
       "Actively working on projects using the MERN stack (MongoDB, Express.js, React, Node.js) with TailwindCSS for styling and UI design.",
@@ -15,7 +24,7 @@
   {
     "companyname": "Innovhub Systems Pvt.Ltd.",
     "workrole": "Former Director",
-    "dates": "September 2021 - Oct 2023",
+    "dates": "Sept 2021 - Oct 2023",
     "companyimageurl": "/Companylogo/insys.png",
     "accomplish": [
       "Successfully led research and development as well as operation and assembly processes efforts, resulting in the development of innovative prototypes for 3D Printer Machine.",
@@ -26,7 +35,7 @@
   {
     "companyname": "Spellsys Technologies",
     "workrole": "Full Stack Developer",
-    "dates": "February 2022 - February 2023",
+    "dates": "Feb 2022 - Feb 2023",
     "companyimageurl": "/Companylogo/spellsys.png",
     "accomplish": [
       "Developed Website by using JS, ReactJS, Nodejs/Express JS, and MySQL/PostgresSQL, PHP.",
