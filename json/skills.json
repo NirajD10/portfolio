@@ -5,27 +5,32 @@
             {
                 "id": 1,
                 "name": "HTML",
-                "iconUrl": "/Skillslogo/html.png"
+                "icon": "html"
             },
             {
                 "id": 2,
                 "name": "CSS",
-                "iconUrl": "/Skillslogo/css.png"
+                "icon": "css"
             },
             {
                 "id": 3,
-                "name": "Javscript",
-                "iconUrl": "/Skillslogo/javascript.png"
+                "name": "JavaScript",
+                "icon": "javascript"
             },
             {
                 "id": 4,
-                "name": "React Js",
-                "iconUrl": "/Skillslogo/react.png"
+                "name": "TypeScript",
+                "icon": "typescript"
             },
             {
                 "id": 5,
+                "name": "React Js",
+                "icon": "react"
+            },
+            {
+                "id": 6,
                 "name": "TailwindCSS",
-                "iconUrl": "/Skillslogo/tailwindcss.png"
+                "icon": "tailwind"
             }
         ]
     },
@@ -35,17 +40,17 @@
             {
                 "id": "f1",
                 "name": "Next Js",
-                "iconUrl": "/Skillslogo/next.png"
+                "icon": "next"
             },
             {
                 "id": "f2",
                 "name": "Framer M.",
-                "iconUrl": "/Skillslogo/fmotion.png"
+                "icon": "framer"
             },
             {
                 "id": "f3",
                 "name": "EJS engine",
-                "iconUrl": "/Skillslogo/ejs.png"
+                "icon": "ejs"
             }
         ]
     },
@@ -55,17 +60,22 @@
             {
                 "id": "b1",
                 "name": "Node Js",
-                "iconUrl": "/Skillslogo/node.png"
+                "icon": "node"
             },
             {
                 "id": "b2",
                 "name": "Express Js",
-                "iconUrl": "/Skillslogo/express.png"
+                "icon": "express"
             },
             {
                 "id": "b3",
+                "name": "Fastify",
+                "icon": "fastify"
+            },
+            {
+                "id": "b4",
                 "name": "Firebase",
-                "iconUrl": "/Skillslogo/firebase.png"
+                "icon": "firebase"
             }
         ]
     },
@@ -74,33 +84,73 @@
         "skills": [
             {
                 "id": "d1",
-                "name": "MongoDB",
-                "iconUrl": "/Skillslogo/mongodb.png"
+                "name": "PostgreSQL",
+                "icon": "postgresql"
             },
             {
-                "id": "d2",
-                "name": "Mongoose",
-                "iconUrl": "/Skillslogo/mongoose.png"
+                "id": "d6",
+                "name": "Prisma",
+                "icon": "prisma"
             },
             {
-                "id": "d3",
-                "name": "MySQL",
-                "iconUrl": "/Skillslogo/mysql.png"
+                "id": "d7",
+                "name": "Drizzle",
+                "icon": "drizzle"
             },
             {
                 "id": "d4",
+                "name": "MySQL",
+                "icon": "mysql"
+            },
+            {
+                "id": "d2",
+                "name": "MongoDB",
+                "icon": "mongodb"
+            },
+            {
+                "id": "d3",
+                "name": "Mongoose",
+                "icon": "mongoose"
+            },
+            {
+                "id": "d5",
                 "name": "Sequelize",
-                "iconUrl": "/Skillslogo/sequelize.png"
+                "icon": "sequelize"
             }
         ]
     },
     {
-        "name": "Version Control",
+        "name": "AI Tools",
         "skills": [
             {
-                "id": "v1",
-                "name": "Git",
-                "iconUrl": "/Skillslogo/git.png"
+                "id": "ai1",
+                "name": "Claude Code",
+                "icon": "claude"
+            },
+            {
+                "id": "ai2",
+                "name": "Codex",
+                "icon": "openai"
+            },
+            {
+                "id": "ai3",
+                "name": "Ollama",
+                "icon": "ollama"
+            },
+            {
+                "id": "ai4",
+                "name": "RAG",
+                "icon": "openai"
+            },
+            {
+                "id": "ai5",
+                "name": "Generative AI",
+                "icon": "openai"
+            },
+            {
+                "id": "ai6",
+                "name": "LangChain",
+                "icon": "langchain"
             }
         ]
     },
@@ -110,37 +160,37 @@
             {
                 "id": "dp1",
                 "name": "AWS EC2",
-                "iconUrl": "/Skillslogo/AWS_EC2.png"
+                "icon": "ec2"
             },
             {
                 "id": "dp2",
                 "name": "Jenkins",
-                "iconUrl": "/Skillslogo/jenkins.png"
+                "icon": "jenkins"
             },
             {
                 "id": "dp3",
                 "name": "Docker",
-                "iconUrl": "/Skillslogo/Docker.png"
+                "icon": "docker"
             },
             {
                 "id": "dp4",
                 "name": "AWS S3",
-                "iconUrl": "/Skillslogo/S3.png"
+                "icon": "s3"
             },
             {
                 "id": "dp5",
                 "name": "AWS SNS",
-                "iconUrl": "/Skillslogo/AWS_SNS.png"
+                "icon": "aws"
             }
         ]
     },
     {
-        "name": "Mobile App Development",
+        "name": "Version Control",
         "skills": [
             {
-                "id": "md1",
-                "name": "React Native",
-                "iconUrl": "/Skillslogo/rnative.png"
+                "id": "v1",
+                "name": "Git",
+                "icon": "git"
             }
         ]
     },
@@ -150,12 +200,12 @@
             {
                 "id": "u1",
                 "name": "Figma",
-                "iconUrl": "/Skillslogo/Figma.png"
+                "icon": "figma"
             },
             {
                 "id": "u2",
                 "name": "Photoshop",
-                "iconUrl": "/Skillslogo/photoshop.png"
+                "icon": "photoshop"
             }
         ]
     }

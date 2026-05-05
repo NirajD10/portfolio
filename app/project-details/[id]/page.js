@@ -21,7 +21,8 @@ async function getProject(id) {
 }
 
 export default async function ProjectDetails({ params }) {
-  const project = await getProject(params.id);
+  const { id } = await params;
+  const project = await getProject(id);
 
   return (
     <Fragment>

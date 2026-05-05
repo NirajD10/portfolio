@@ -1,57 +1,66 @@
 "use client";
 
 import React, { useState } from "react";
-import { clsx } from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import SectionCard from "./chunkcomponents/SectionCard";
 import HeadingTitle from "./chunkcomponents/HeadingTitle";
 import Image from "next/image";
 
 const ExperienceSection = ({ tabsanddetails }) => {
-  const [selectedTab, setSelectedTab] = useState(tabsanddetails[0]);
+  const [selectedTabIndex, setSelectedTabIndex] = useState(0);
+  const selectedTab = tabsanddetails[selectedTabIndex] ?? tabsanddetails[0];
 
   return (
     <SectionCard>
-      <HeadingTitle title="Experience" size="big" />
-      <motion.p
-        className="font-roboto text-base sm:text-xl text-primary font-normal"
-        initial={{ opacity: 0, y: -10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.5, type: "keyframes" }}
-      >
-        You can also view my{" "}
-        <a
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <HeadingTitle title="Experience" size="big" />
+        <motion.a
           href="/Niraj's Resume.pdf"
           alt="Niraj's Resume"
           target="_blank"
           rel="noopener noreferrer"
-          className="no-underline px-1 text-[#7149C6] hover:bg-[#7149C6] hover:text-primary transition-all"
+          className="w-fit rounded-full border border-purple-primary px-5 py-2 font-roboto text-sm font-bold text-primary transition-all hover:bg-dark-secondary sm:text-base"
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5, type: "keyframes" }}
         >
-          resume
-        </a>
-      </motion.p>
+          View Resume
+        </motion.a>
+      </div>
 
-      <div className="lg:h-[28rem]">
+      <div className="w-full">
         {/* Experience Tabs */}
-        <div className="flex flex-col  lg:flex-row justify-center">
+        <div className="flex flex-col gap-5 lg:grid lg:grid-cols-[minmax(16rem,20rem)_minmax(0,42rem)] lg:items-stretch lg:justify-center lg:gap-6">
           <motion.div
-            className="border-2 border-neutral-700 rounded-[20px] h-fit sm:w-fit"
+            className="h-fit overflow-hidden rounded-2xl border border-neutral-700 bg-dark-alternative/80 p-2"
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.72, type: "keyframes" }}
           >
-            <ul className="flex flex-row lg:flex-col gap-1">
-              {tabsanddetails.map((tad) => (
+            <ul className="carousel flex snap-x snap-mandatory flex-row gap-2 overflow-x-auto lg:flex-col lg:overflow-visible">
+              {tabsanddetails.map((tad, index) => {
+                const isSelected = index === selectedTabIndex;
+
+                return (
                 <li
                   key={tad.workrole}
-                  className="text-primary py-3 px-5 sm:py-5 sm:px-6 rounded-xl sm:rounded-[20px] cursor-pointer relative"
-                  onClick={() => setSelectedTab(tad)}
+                  onClick={(event) => {
+                    setSelectedTabIndex(index);
+                    if (index < tabsanddetails.length - 1) {
+                      event.currentTarget.scrollIntoView({
+                        behavior: "smooth",
+                        block: "nearest",
+                        inline: "center",
+                      });
+                    }
+                  }}
+                  className="relative min-w-[14.5rem] snap-start rounded-xl px-4 py-4 text-primary transition-colors hover:bg-dark-primary lg:min-w-0 lg:px-5"
                 >
-                  {tad === selectedTab && (
+                  {isSelected && (
                     <motion.span
-                      className="absolute bg-dark-secondary inset-0 rounded-[14px] sm:rounded-[18px] -z-10"
+                      className="absolute inset-0 rounded-xl border border-purple-primary bg-dark-secondary"
                       layoutId="selectedTab"
                       transition={{
                         type: "spring",
@@ -60,64 +69,71 @@ const ExperienceSection = ({ tabsanddetails }) => {
                       }}
                     ></motion.span>
                   )}
-                  <p className="font-roboto font-bold text-base sm:text-lg">
-                    {tad.companyname}
-                  </p>
-                  <p className="font-roboto font-light text-base sm:text-lg">
-                    {tad.workrole}
-                  </p>
+                  <button
+                    type="button"
+                    className="relative z-10 flex w-full flex-col items-start text-left"
+                  >
+                    <span className="font-roboto text-sm font-bold leading-snug sm:text-base">
+                      {tad.companyname}
+                    </span>
+                    <span className="mt-1 font-roboto text-sm font-light leading-snug text-primary/80 sm:text-base">
+                      {tad.workrole}
+                    </span>
+                    <span className="mt-3 h-[2px] w-10 rounded-full bg-primary/70"></span>
+                  </button>
                 </li>
-              ))}
+                );
+              })}
             </ul>
           </motion.div>
           {/* */}
           {/* Experience Details */}
-          <div className="lg:w-[38em] bg-dark-alternative border-2 border-neutral-700 rounded-[20px] py-8 px-4">
+          <div className="min-h-[30rem] overflow-hidden rounded-2xl border border-neutral-700 bg-dark-alternative">
             <AnimatePresence mode="wait">
               <motion.div
                 key={selectedTab.companyname}
-                initial={{ opacity: 0, y: -10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1, type: "keyframes" }}
+                className="flex h-full flex-col"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.25, type: "keyframes" }}
                 exit={{ opacity: 0, y: 10 }}
               >
-                <div className="flex flex-col sm:flex-row sm:items-start px-6">
-                  <div className="flex flex-col items-center sm:flex-row gap-3">
-                    <Image
-                      src={selectedTab.companyimageurl}
-                      width={60}
-                      height={60}
-                      alt={selectedTab.companyname}
-                    />
-                    <div className="flex flex-col items-center sm:items-start text-primary">
-                      <p className="font-roboto font-bold text-base sm:text-[20px] m-0 p-0">
-                        {selectedTab.workrole}
-                      </p>
-                      <p className="font-roboto font-light text-base m-0 p-0">
-                        {selectedTab.dates}
-                      </p>
-                      <p className="sm:hidden font-roboto text-base border-t-[1px] border-white mt-2 text-[#865be4]">
-                        {selectedTab.companyname}
-                      </p>
+                <div className="border-b border-neutral-700 bg-dark-primary px-5 py-6 sm:px-8 sm:py-7">
+                  <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl border border-neutral-700 bg-dark-alternative p-2 sm:h-20 sm:w-20">
+                        <Image
+                          src={selectedTab.companyimageurl}
+                          fill
+                          sizes="80px"
+                          className="object-contain p-2"
+                          alt={selectedTab.companyname}
+                        />
+                      </div>
+                      <div className="flex min-w-0 flex-col text-primary">
+                        <p className="font-roboto text-xl font-bold leading-tight sm:text-[26px]">
+                          {selectedTab.workrole}
+                        </p>
+                        <p className="mt-2 font-roboto text-base font-bold text-dark-purple">
+                          {selectedTab.companyname}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="hidden sm:flex flex-row py-2">
-                    <div className="mx-3 w-1 h-5 bg-white"></div>
-                    <p className="font-roboto text-base text-[#865be4]">
-                      {selectedTab.companyname}
+                    <p className="w-fit rounded-full border border-neutral-700 px-4 py-2 font-roboto text-sm font-light text-primary sm:text-base">
+                      {selectedTab.dates}
                     </p>
                   </div>
                 </div>
 
-                <div className="my-4">
-                  <ul className="pl-4 sm:pl-20 space-y-2 text-primary list-disc list-outside marker:text-[#7149C6] marker:text-xl">
+                <div className="flex-1 px-5 py-6 sm:px-8 sm:py-8">
+                  <ul className="space-y-4 text-primary">
                     {selectedTab.accomplish.map((accomplish) => (
                       <li
                         key={accomplish}
-                        className="font-roboto font-light ml-2 pl-3"
+                        className="grid grid-cols-[0.75rem_1fr] gap-4 font-roboto text-base font-light leading-7 sm:text-lg"
                       >
-                        {accomplish}
+                        <span className="mt-3 h-2 w-2 rounded-full bg-dark-secondary"></span>
+                        <span>{accomplish}</span>
                       </li>
                     ))}
                   </ul>

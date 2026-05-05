@@ -1,11 +1,13 @@
 [
   {
     "companyname": "Pure Tech Codex Pvt.Ltd.",
-    "workrole": "Junior Software Developer",
+    "workrole": "Software Developer",
     "dates": "Nov 2024 - Present",
     "companyimageurl": "/Companylogo/pure_technology_logo.jpg",
     "accomplish": [
-      "Actively working on projects using the React with TailwindCSS for styling and UI design."
+      "Developed scalable web applications using React.js, Next.js, Tailwind CSS, ShadCN, Node.js, Fastify, and TypeScript.",
+      "Worked on Generative AI and Retrieval-Augmented Generation (RAG) based solutions.",
+      "Contributed to secure applications that successfully passed high-level VAPT security testing."
     ]
   },
   {
@@ -22,6 +24,16 @@
     ]
   },
   {
+    "companyname": "Spellsys Technologies",
+    "workrole": "Full Stack Developer",
+    "dates": "Feb 2022 - Feb 2023",
+    "companyimageurl": "/Companylogo/spellsys.png",
+    "accomplish": [
+      "Developed Website by using JS, ReactJS, Nodejs/Express JS, and MySQL/PostgresSQL, PHP.",
+      "I increased website traffic by 30% through search engine optimization efforts and developed attractive website using Wordpress."
+    ]
+  },
+  {
     "companyname": "Innovhub Systems Pvt.Ltd.",
     "workrole": "Former Director",
     "dates": "Sept 2021 - Oct 2023",
@@ -30,16 +42,6 @@
       "Successfully led research and development as well as operation and assembly processes efforts, resulting in the development of innovative prototypes for 3D Printer Machine.",
       "Developed and maintained (Wordpress and ReactJS) for A3DXYZ and Spare3D Website.",
       "Managed ecommerce operations for 3D printer spare parts, resulting in increased sales and customer satisfaction. Developed and implemented effective inventory management strategies, resulting in improved stock control and reduced costs."
-    ]
-  },
-  {
-    "companyname": "Spellsys Technologies",
-    "workrole": "Full Stack Developer",
-    "dates": "Feb 2022 - Feb 2023",
-    "companyimageurl": "/Companylogo/spellsys.png",
-    "accomplish": [
-      "Developed Website by using JS, ReactJS, Nodejs/Express JS, and MySQL/PostgresSQL, PHP.",
-      "I increased website traffic by 30% through search engine optimization efforts and developed attractive website using Wordpress."
     ]
   }
 ]
