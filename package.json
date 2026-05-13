@@ -16,7 +16,7 @@
     "framer-motion": "^12.38.0",
     "grapheme-splitter": "^1.0.4",
     "ldrs": "^1.1.9",
-    "next": "^15.5.15",
+    "next": "^15.5.18",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-icons": "^5.5.0",
